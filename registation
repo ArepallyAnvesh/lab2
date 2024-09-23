@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Form</title>
+  <style>
+    /* Add some basic styling to make the form look better */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Event Registration Form</h2>
+    <section>
+      <h3>Personal Information</h3>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+    </section>
+    <section>
+      <h3>Membership Status</h3>
+      <label for="membership">Membership Status:</label>
+      <select id="membership" name="membership">
+        <option value="incoming">Incoming Member</option>
+        <option value="outgoing">Outgoing Member</option>
+      </select><br><br>
+    </section>
+    <section>
+      <h3>Event Details</h3>
+      <label for="event-name">Event Name:</label>
+      <input type="text" id="event-name" name="event-name"><br><br>
+      <label for="event-date">Event Date:</label>
+      <input type="date" id="event-date" name="event-date"><br><br>
+    </section>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
